@@ -1,14 +1,22 @@
 {
-  "name": "studymate-ai-frontend",
+  "name": "studymate-ai",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "node server/index.js",
+    "server:watch": "node --watch server/index.js"
   },
   "dependencies": {
+    "@azure/ai-agents": "^1.1.0",
+    "@azure/identity": "^4.13.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "multer": "^2.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "lucide-react": "^0.468.0"
